@@ -4,6 +4,8 @@
 ![Badge gzip size](https://badge-size.herokuapp.com/lyef/lyef-full-header/master/dist/Main.min.js.svg?compression=gzip)
 [![NPM version](https://badge-me.herokuapp.com/api/npm/lyef-full-header.png)](http://badges.enytc.com/for/npm/lyef-full-header)
 
+![A gif with header containing video](https://media.giphy.com/media/l0MYPKsMPCK0YNFvy/giphy.gif)
+
 ## Demo
 
 [Live examples](https://lyef.github.io/lyef-full-header)
