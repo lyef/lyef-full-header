@@ -27,9 +27,19 @@ describe('<FullHeader />', () => {
         expect(wrapper.find('h2')).to.have.length(1);
     });
 
-    it('should not have h1 when title is not passed', () => {
+    it('should not have h2 when subtitle is not passed', () => {
         const wrapper = shallow(<FullHeader />);
         expect(wrapper.find('h2')).to.have.length(0);
+    });
+
+    it('should have video when video passed', () => {
+        const wrapper = shallow(<FullHeader video="my_video.mp4" />);
+        expect(wrapper.find('video')).to.have.length(1);
+    });
+
+    it('should not have video when video is not passed', () => {
+        const wrapper = shallow(<FullHeader />);
+        expect(wrapper.find('video')).to.have.length(0);
     });
 
     it('should have background-color equal #000 when none is passed', () => {

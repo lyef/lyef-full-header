@@ -1,53 +1,49 @@
 import React, { PropTypes } from 'react';
+import { containerStyle, titleStyle, subtitleStyle, videoStyle } from './Styles';
 
-const FullHeader = ({ title, subtitle, bgColor = '#000', textColor = '#fff', font = 'sans-serif', bgImg = '' }) => {
-    const headerStyle = {
-        display: 'table',
-        width: '100%',
-        height: '100vh',
-        backgroundColor: bgColor,
-        backgroundImage: `url(${bgImg})`,
-        backgroundSize: 'cover',
-        color: textColor,
-        fontFamily: font,
-    };
-
-    const containerStyle = {
-        display: 'table-cell',
-        verticalAlign: 'middle',
-        textAlign: 'center',
-    };
-
-    const titleStyle = {
-        fontSize: '5rem',
-        lineHeight: '1.5',
-    };
-
-    const subtitleStyle = {
-        fontSize: '2rem',
-    };
-
-    return (
-        <header className="full-header" style={headerStyle}>
-            <div className="texts" style={containerStyle}>
-                {title &&
-                    <h1 className="title" style={titleStyle}>{title}</h1>
-                }
-                {subtitle &&
-                    <h2 className="subtitle" style={subtitleStyle}>{subtitle}</h2>
-                }
-            </div>
-        </header>
-    );
+const defaultProps = {
+    bgColor: '#000',
+    textColor: '#fff',
+    font: 'sans-serif',
+    bgImg: '',
 };
 
-FullHeader.propTypes = {
+const propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     bgColor: PropTypes.string,
     textColor: PropTypes.string,
     font: PropTypes.string,
     bgImg: PropTypes.string,
+    video: PropTypes.string,
 };
+
+const FullHeader = ({ title, subtitle, bgColor, textColor, font, bgImg, video }) => {
+    const headerStyle = {
+        display: 'table',
+        width: '100%',
+        height: '100vh',
+        backgroundSize: 'cover',
+        backgroundColor: bgColor,
+        backgroundImage: `url(${bgImg})`,
+        color: textColor,
+        fontFamily: font,
+    };
+
+    return (
+        <header className="full-header" style={headerStyle}>
+            <div className="texts" style={containerStyle}>
+                {title && <h1 className="title" style={titleStyle}>{title}</h1>}
+                {subtitle && <h2 className="subtitle" style={subtitleStyle}>{subtitle}</h2>}
+            </div>
+            {video &&
+                <video className="video" autoPlay muted loop src={video} style={videoStyle} />
+            }
+        </header>
+    );
+};
+
+FullHeader.defaultProps = defaultProps;
+FullHeader.propTypes = propTypes;
 
 export default FullHeader;
