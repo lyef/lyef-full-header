@@ -1,6 +1,6 @@
 {
   "name": "lyef-full-header",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A full width and height header react component.",
   "main": "dist/Main.js",
   "scripts": {
