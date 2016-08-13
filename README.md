@@ -13,17 +13,22 @@
 $ npm install --save lyef-full-header
 ```
 
-*Remember to import the styles on `css/main.css` folder to your project.*
-
 ## Basic Usage
 
 ```jsx
-import lyefFullHeader from 'lyef-full-header';
+import FullHeader from 'lyef-full-header';
 
 ...
 render() {
     return (
-        <lyefFullHeader />
+        <FullHeader
+            title="lyef"
+            subtitle="What is tested may never break."
+            bgColor="#EBE9EB"
+            textColor="#3299BB"
+            font="Lobster"
+            video="videos/my_video.mp4"
+        />
     );
 }
 ...
@@ -31,16 +36,20 @@ render() {
 
 ## Props
 
-- `prop` (type) - description
-- `prop` (type) - description
-- `prop` (type) - description
+- `title` (string) - main title
+- `subtitle` (string) - subtitle
+- `bgColor` (string) - background color
+- `bgImg` (string) - image to background
+- `video` (string) - video to background
+- `textColor` (string) - texts color
+- `font` (string) - font-family to texts
 
 ## Architecture
 
 We've developed this component using the following boilerplate:
 [lyef-react-component](https://github.com/lyef/lyef-react-component).
 
-To know more about the architecture or if you want to contribute with this component:
+If you want to contribute with this component:
 [Contributing Documentation](https://github.com/lyef/lyef-full-header/blob/master/CONTRIBUTING.md).
 
 ## License
