@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/lyef/lyef-full-header.svg?branch=master)](https://travis-ci.org/lyef/lyef-full-header)
 ![Badge size](https://badge-size.herokuapp.com/lyef/lyef-full-header/master/dist/Main.min.js.svg)
 ![Badge gzip size](https://badge-size.herokuapp.com/lyef/lyef-full-header/master/dist/Main.min.js.svg?compression=gzip)
+[![NPM version](https://badge-me.herokuapp.com/api/npm/lyef-full-header.png)](http://badges.enytc.com/for/npm/lyef-full-header)
 
 ## Demo
 
