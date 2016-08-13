@@ -9,36 +9,43 @@ storiesOf('<FullHeader />', module)
     .add('with title and subtitle', () => (
         <FullHeader title="lyef" subtitle="What is tested may never break." />
     ))
-    .add('with title, subtitle and bg-color', () => (
+    .add('with title, subtitle and bgColor', () => (
         <FullHeader
             title="lyef"
             subtitle="What is tested may never break."
-            bg-color="#3299BB"
+            bgColor="#3299BB"
         />
     ))
-    .add('with just title, subtitle, bg-color and text-color', () => (
+    .add('with just title, subtitle, bgColor and textColor', () => (
         <FullHeader
             title="lyef"
             subtitle="What is tested may never break."
-            bg-color="#3299BB"
-            text-color="#FF9900"
+            bgColor="#3299BB"
+            textColor="#FF9900"
         />
     ))
-    .add('with all settings', () => (
+    .add('with just title, subtitle, bgColor, textColor and font', () => (
         <FullHeader
             title="lyef"
             subtitle="What is tested may never break."
-            bg-color="#7AA7CE"
-            text-color="#129418"
-            bg-img="http://www.toptenpack.com/wp-content/uploads/2016/01/ireland-full-hd-wallpaper.jpeg"
+            bgColor="#96060C"
+            textColor="#FF9900"
+            font="cursive"
+        />
+    ))
+    .add('with title, subtitle, bgImg', () => (
+        <FullHeader
+            title="lyef"
+            subtitle="What is tested may never break."
+            bgImg="http://www.toptenpack.com/wp-content/uploads/2016/01/ireland-full-hd-wallpaper.jpeg"
         />
     ))
     .add('with just title, subtitle and video', () => (
         <FullHeader
             title="lyef"
             subtitle="What is tested may never break."
-            bg-color="#EBE9EB"
-            text-color="#272727"
+            bgColor="#EBE9EB"
+            textColor="#272727"
             video="http://callmenick.com/_development/video/full-screen-background-video/media/demo.mp4"
         />
     ));
