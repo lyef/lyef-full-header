@@ -1,6 +1,6 @@
 import React from 'react';
 import FullHeader from '../src/Main'; // This is our component
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 
 storiesOf('<FullHeader />', module)
     .add('with title', () => (
@@ -37,8 +37,7 @@ storiesOf('<FullHeader />', module)
         <FullHeader
             title="lyef"
             subtitle="What is tested may never break."
-            bgColor="#D4D4D8"
-            bgImg="http://www.toptenpack.com/wp-content/uploads/2016/01/ireland-full-hd-wallpaper.jpeg"
+            bgImg="https://raw.githubusercontent.com/willianjusten/photo-examples/master/iceland-glacier.jpg"
         />
     ))
     .add('with title, subtitle and video', () => (

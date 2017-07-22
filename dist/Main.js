@@ -6,6 +6,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _Styles = require('./Styles');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -18,23 +22,23 @@ var defaultProps = {
 };
 
 var propTypes = {
-    title: _react.PropTypes.string,
-    subtitle: _react.PropTypes.string,
-    bgColor: _react.PropTypes.string,
-    textColor: _react.PropTypes.string,
-    font: _react.PropTypes.string,
-    bgImg: _react.PropTypes.string,
-    video: _react.PropTypes.string
+    title: _propTypes2['default'].string,
+    subtitle: _propTypes2['default'].string,
+    bgColor: _propTypes2['default'].string,
+    textColor: _propTypes2['default'].string,
+    font: _propTypes2['default'].string,
+    bgImg: _propTypes2['default'].string,
+    video: _propTypes2['default'].string
 };
 
 var FullHeader = function FullHeader(_ref) {
-    var title = _ref.title;
-    var subtitle = _ref.subtitle;
-    var bgColor = _ref.bgColor;
-    var textColor = _ref.textColor;
-    var font = _ref.font;
-    var bgImg = _ref.bgImg;
-    var video = _ref.video;
+    var title = _ref.title,
+        subtitle = _ref.subtitle,
+        bgColor = _ref.bgColor,
+        textColor = _ref.textColor,
+        font = _ref.font,
+        bgImg = _ref.bgImg,
+        video = _ref.video;
 
     var headerStyle = {
         display: 'table',
