@@ -1,7 +1,14 @@
-export const containerStyle = {
-    display: 'table-cell',
-    verticalAlign: 'middle',
+export const headerStyle = {
+    alignItems: 'center',
+    display: 'flex',
     textAlign: 'center',
+    width: '100%',
+    height: '100vh',
+    backgroundSize: 'cover',
+};
+
+export const containerStyle = {
+    width: '100%',
     position: 'relative',
     zIndex: 2,
 };
