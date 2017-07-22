@@ -40,20 +40,16 @@ var FullHeader = function FullHeader(_ref) {
         bgImg = _ref.bgImg,
         video = _ref.video;
 
-    var headerStyle = {
-        display: 'table',
-        width: '100%',
-        height: '100vh',
-        backgroundSize: 'cover',
+    var headerStyleCombined = Object.assign({}, _Styles.headerStyle, {
         backgroundColor: bgColor,
         backgroundImage: 'url(' + String(bgImg) + ')',
         color: textColor,
         fontFamily: font
-    };
+    });
 
     return _react2['default'].createElement(
         'header',
-        { className: 'full-header', style: headerStyle },
+        { className: 'full-header', style: headerStyleCombined },
         _react2['default'].createElement(
             'div',
             { className: 'texts', style: _Styles.containerStyle },

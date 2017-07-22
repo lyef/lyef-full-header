@@ -1,10 +1,17 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var containerStyle = exports.containerStyle = {
-    display: 'table-cell',
-    verticalAlign: 'middle',
+var headerStyle = exports.headerStyle = {
+    alignItems: 'center',
+    display: 'flex',
     textAlign: 'center',
+    width: '100%',
+    height: '100vh',
+    backgroundSize: 'cover'
+};
+
+var containerStyle = exports.containerStyle = {
+    width: '100%',
     position: 'relative',
     zIndex: 2
 };
